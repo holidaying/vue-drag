@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+        <link rel="stylesheet" href="https://unpkg.com/element-ui@2.3.7/lib/theme-chalk/index.css">
+        <link rel="stylesheet" href="./src/slider.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/element-ui@2.3.7/lib/index.js"></script>
+		<script src="./src/jquery-3.3.1.min.js"></script>
+		<!-- <script src="./src/vue.js"></script>-->
+		<script src="./src/slideunlock.js"></script>
+
+		<style>
+			.ccc {
+				margin-top: 1000px;
+				background: red;
+				height: 500px;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<transition name="fade">
+				<div class="popbox-container" v-show="isShow">
+					<div class="ocx-masker">
+						<iframe src="" frameborder="0"></iframe>
+					</div>
+					<div class="slide-unlock-container">
+						<div class="header">删除确认<i class="icon-close" @click="closeSlider"></i></div>
+						<div class="header-tips"><i class="icon-warning"></i> 删除后不可恢复，确定要删除吗？</div>
+						<div class="slide-unlock" :class="className" :id="boxId">
+							<div class="slider_bg" id="slider_bg"></div>
+							<span class="drag-label" id="label"><i class="label-arrow"></i></span>
+							<span class="drag-tips" id="drag-tips">请拖住滑块，拖动到最右边完成验证</span>
+						</div>
+						<div class="dialog-footer">
+							<el-button size="8628" @click="slideSave" :class="{'green':success,'gray':!success}">确&nbsp;&nbsp;&nbsp;&nbsp;定</el-button>
+							<el-button size="8628" class="gray" @click="slideCancel">取&nbsp;&nbsp;&nbsp;&nbsp;消</el-button>
+						</div>
+					</div>
+				</div>
+			</transition>
+		</div>
+	</body>
+	<script src="./src/index.js"></script>
+</html>

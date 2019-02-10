@@ -1,0 +1,99 @@
+.slide-unlock-container .success-label.label-arrow {
+	background: url('~src/assets/images/common/icon_success.png');
+	height: 14px;
+	width: 14px;
+	background-position: center;
+	background-size: contain;
+}
+
+.slide-unlock-container .header {
+	height: 45px;
+	line-height: 45px;
+	padding-left: 20px;
+	color: #222;
+	font-size: 14px;
+	font-weight: bolder;
+}
+.icon-close {
+	top: 14px;
+	display: inline-block;
+	position: absolute;
+	float: right;
+	right: 20px;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-left: 8px;
+}
+
+.slide-unlock-container .header-tips {
+	font-size: 14px;
+	text-align: center;
+	margin: 22px auto 10px auto;
+}
+
+.icon-warning {
+	background: url('~src/assets/images/common/icon_warning.png');
+	margin-right: 10px;
+	height: 24px;
+	width: 24px;
+	background-position: center;
+	background-size: contain;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.slide-unlock {
+	margin: 0px auto;
+	width: 300px;
+	height: 40px;
+	position: relative;
+	border-radius: 2px;
+	background-color: #f6f6f6;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	text-align: center;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.slider_bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #e8f0d8;
+	border: 1px solid #8fc31f;
+	z-index: 1;
+}
+.drag-label {
+	width: 42px;
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #cccccc;
+	background: #f6f6f6;
+	z-index: 3;
+	cursor: move;
+	color: #ff9e77;
+	font-size: 16px;
+	font-weight: 900;
+}
+.drag-tips {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	font-family: 'Microsoft Yahei', serif;
+
+	color: #999;
+	line-height: 38px;
+	text-align: center;
+	z-index: 2;
+}
+.drag-tips-active {
+	color: #47ab00;
+}
